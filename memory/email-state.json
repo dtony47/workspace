@@ -1,0 +1,57 @@
+{
+  "lastCheck": "2026-04-04T13:44:48.605527",
+  "totalChecked": 90,
+  "importantFound": 25,
+  "importantEmails": [
+    {
+      "from": "Find a job <noreply@email.findajob.dwp.gov.uk>",
+      "subject": "67 Permanent, jobs in UK, salary from \u00a375,000, in the IT Jobs category, ...",
+      "date": "Fri, 3 Apr 2026 00:02:49 +0000",
+      "score": 60,
+      "reasons": [
+        "Priority sender: gov.uk",
+        "Subject keyword: job"
+      ]
+    },
+    {
+      "from": "Find a job <noreply@email.findajob.dwp.gov.uk>",
+      "subject": "42 Permanent, jobs in UK, in the IT Jobs category, including at least one ...",
+      "date": "Fri, 3 Apr 2026 00:03:23 +0000",
+      "score": 60,
+      "reasons": [
+        "Priority sender: gov.uk",
+        "Subject keyword: job"
+      ]
+    },
+    {
+      "from": "Find a job <noreply@email.findajob.dwp.gov.uk>",
+      "subject": "60 Permanent, jobs in UK, salary from \u00a375,000, in the IT Jobs category, ...",
+      "date": "Sat, 4 Apr 2026 00:02:15 +0000",
+      "score": 60,
+      "reasons": [
+        "Priority sender: gov.uk",
+        "Subject keyword: job"
+      ]
+    },
+    {
+      "from": "Find a job <noreply@email.findajob.dwp.gov.uk>",
+      "subject": "35 Permanent, jobs in UK, in the IT Jobs category, including at least one ...",
+      "date": "Sat, 4 Apr 2026 00:02:57 +0000",
+      "score": 60,
+      "reasons": [
+        "Priority sender: gov.uk",
+        "Subject keyword: job"
+      ]
+    },
+    {
+      "from": "Apple TV <appletv@insideapple.apple.com>",
+      "subject": "Lock up your valuables \u2014 a scandalous new season premieres today.",
+      "date": "Fri, 3 Apr 2026 14:18:31 +0000 (GMT)",
+      "score": 55,
+      "reasons": [
+        "Priority sender: apple.com",
+        "Business: n8n"
+      ]
+    }
+  ]
+}
