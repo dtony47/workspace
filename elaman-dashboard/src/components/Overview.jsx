@@ -121,6 +121,42 @@ export default function Overview({ setActiveTab }) {
         </div>
       </div>
 
+      {/* Active Sprints Row */}
+      <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-5">
+        <div className="flex items-center justify-between mb-4">
+          <div>
+            <h3 className="font-semibold text-gray-900">Active Sprints</h3>
+            <p className="text-xs text-gray-500 mt-0.5">Live project status</p>
+          </div>
+          <button onClick={() => setActiveTab('projects')} className="text-xs text-blue-500 hover:underline flex items-center gap-1">
+            Full Dashboard <ArrowUpRight className="w-3 h-3" />
+          </button>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {projects.filter(p => ['active', 'ready'].includes(p.status)).slice(0, 3).map((project) => (
+            <div key={project.id} className="border border-gray-100 rounded-lg p-4 hover:border-blue-200 transition-colors">
+              <div className="flex items-start justify-between mb-2">
+                <div className="flex items-center gap-2">
+                  <StatusDot status={project.status} />
+                  <span className="font-medium text-sm text-gray-900">{project.name}</span>
+                </div>
+                <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-600">{project.progress}%</span>
+              </div>
+              <p className="text-xs text-gray-500 mb-2 line-clamp-2">{project.statusLabel}</p>
+              <div className="w-full bg-gray-100 rounded-full h-1.5 mb-2">
+                <div
+                  className="bg-blue-500 h-1.5 rounded-full transition-all"
+                  style={{ width: `${project.progress}%` }}
+                />
+              </div>
+              {project.notes && (
+                <p className="text-xs text-gray-400 line-clamp-2">{project.notes}</p>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* Third Row */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {/* Top Priorities */}
