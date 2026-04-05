@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* Custom scrollbar for sidebar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #3b3b5c;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4b4b6c;
+}
+
+/* Smooth transitions */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Drag and drop ghost styling */
+.cursor-grabbing * {
+  cursor: grabbing !important;
+}
