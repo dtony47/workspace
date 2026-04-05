@@ -157,6 +157,79 @@ export default function Overview({ setActiveTab }) {
         </div>
       </div>
 
+      {/* Weekly Progress Tracker */}
+      <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl shadow-sm border border-blue-100 p-5">
+        <div className="flex items-center justify-between mb-4">
+          <div>
+            <h3 className="font-semibold text-gray-900">12-Week Master Plan Progress</h3>
+            <p className="text-xs text-gray-500 mt-0.5">Week 1 of 12 • Phase 1: TIER 1 Monetisation</p>
+          </div>
+          <div className="text-right">
+            <p className="text-2xl font-bold text-blue-600">£1,250</p>
+            <p className="text-xs text-gray-500">Current MRR</p>
+          </div>
+        </div>
+        
+        {/* Week Progress Bar */}
+        <div className="mb-4">
+          <div className="flex items-center justify-between text-xs text-gray-600 mb-1">
+            <span>Week 1 Progress</span>
+            <span>0%</span>
+          </div>
+          <div className="w-full bg-gray-200 rounded-full h-2">
+            <div className="bg-blue-500 h-2 rounded-full transition-all" style={{ width: '0%' }} />
+          </div>
+        </div>
+
+        {/* This Week's Targets */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+          <div className="bg-white rounded-lg p-3 border border-blue-100">
+            <p className="text-xs text-gray-500">Ghana Reconcile</p>
+            <p className="text-sm font-semibold text-gray-900">3 pilots</p>
+            <p className="text-xs text-green-600">⏳ Pending</p>
+          </div>
+          <div className="bg-white rounded-lg p-3 border border-blue-100">
+            <p className="text-xs text-gray-500">AI Blog</p>
+            <p className="text-sm font-semibold text-gray-900">2 posts</p>
+            <p className="text-xs text-green-600">⏳ Pending</p>
+          </div>
+          <div className="bg-white rounded-lg p-3 border border-blue-100">
+            <p className="text-xs text-gray-500">LinkedIn Posts</p>
+            <p className="text-sm font-semibold text-gray-900">2 posts</p>
+            <p className="text-xs text-green-600">⏳ Pending</p>
+          </div>
+          <div className="bg-white rounded-lg p-3 border border-blue-100">
+            <p className="text-xs text-gray-500">DVSA</p>
+            <p className="text-sm font-semibold text-gray-900">Deploy</p>
+            <p className="text-xs text-green-600">⏳ Pending</p>
+          </div>
+        </div>
+
+        {/* 12-Week Timeline */}
+        <div className="flex items-center gap-1 text-xs">
+          {Array.from({ length: 12 }, (_, i) => (
+            <div key={i} className={`flex-1 h-8 rounded flex items-center justify-center ${i === 0 ? 'bg-blue-500 text-white' : i < 4 ? 'bg-blue-100 text-blue-700' : 'bg-gray-100 text-gray-400'}`}>
+              {i + 1}
+            </div>
+          ))}
+        </div>
+        <div className="flex justify-between text-xs text-gray-500 mt-1">
+          <span>Phase 1: TIER 1</span>
+          <span>Phase 2: TIER 2</span>
+          <span>Phase 3: TIER 3</span>
+        </div>
+
+        {/* Quick Links */}
+        <div className="mt-4 flex gap-2">
+          <a href="/Users/kofi/.openclaw/workspace/TIER_1_4WEEK_ACTION_PLAN.md" className="text-xs px-3 py-1.5 bg-white border border-blue-200 rounded-lg text-blue-600 hover:bg-blue-50">
+            📋 Week 1 Plan
+          </a>
+          <a href="/Users/kofi/.openclaw/workspace/12WEEK_MASTER_PLAN.md" className="text-xs px-3 py-1.5 bg-white border border-blue-200 rounded-lg text-blue-600 hover:bg-blue-50">
+            📊 12-Week Plan
+          </a>
+        </div>
+      </div>
+
       {/* Third Row */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {/* Top Priorities */}
