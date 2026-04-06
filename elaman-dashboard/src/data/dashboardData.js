@@ -113,7 +113,7 @@ export const projects = [
     mrrCurrent: 0,
     timeline: 'Q2 2026',
     budget: { spent: 100, total: 1500 },
-    notes: 'TIER 3: Database connected (6 April 2026). PostgreSQL with all 10 tables. Frontend on port 5174 (no conflict). Auth, conversations, knowledge base all persisting. Ready for end-to-end testing. Next: Deploy to Render or test locally.',
+    notes: 'TIER 3: Database connected (6 April 2026). PostgreSQL with all 10 tables. Frontend on port 5175 (no conflict). Auth, conversations, knowledge base all persisting. Ready for end-to-end testing. Next: Deploy to Render or test locally.',
     tier: 'TIER 3 - BUILD STRATEGICALLY',
   },
   {
@@ -430,7 +430,7 @@ export const systemServices = [
   { id: 's3', name: 'Docker Desktop', url: 'local', status: 'online', uptime: '99.9%', lastCheck: '1 min ago', details: '5 containers, CPU 15%, 4.2GB RAM' },
   { id: 's4', name: 'GitHub API', url: 'api.github.com', status: 'healthy', uptime: '100%', lastCheck: '5 min ago', details: '4,500/5,000 requests remaining' },
   { id: 's5', name: 'Gmail API', url: 'gmail.googleapis.com', status: 'online', uptime: '100%', lastCheck: '3 min ago', details: 'OAuth token valid' },
-  { id: 's6', name: 'Vite Dev Server', url: 'localhost:5173', status: 'online', uptime: '100%', lastCheck: 'now', details: 'Dashboard running' },
+  { id: 's6', name: 'Vite Dev Server', url: 'localhost:5174', status: 'online', uptime: '100%', lastCheck: 'now', details: 'Dashboard running' },
 ]
 
 export const githubPRs = [
