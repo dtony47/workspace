@@ -250,9 +250,9 @@ export const projects = [
 export const tasks = [
   // Job Search (HIGH)
   { id: 't1', title: 'Check DWP job alerts for new IT roles £75k+', category: 'Job Search', priority: 'HIGH', due: 'Today', status: 'pending', source: 'Daily Brief' },
-  { id: 't2', title: 'Follow up on Lloyds application', category: 'Job Search', priority: 'HIGH', due: 'Today', status: 'pending', source: 'Daily Brief' },
-  { id: 't3', title: 'Follow up on Crowe application', category: 'Job Search', priority: 'HIGH', due: 'Today', status: 'pending', source: 'Daily Brief' },
-  { id: 't4', title: 'Follow up on AJ Bell application', category: 'Job Search', priority: 'HIGH', due: 'Today', status: 'pending', source: 'Daily Brief' },
+  { id: 't2', title: 'Follow up on Lloyds application', category: 'Job Search', priority: 'HIGH', due: 'Today', status: 'completed', source: 'Daily Brief - Unsuccessful' },
+  { id: 't3', title: 'Follow up on Crowe application', category: 'Job Search', priority: 'HIGH', due: 'Today', status: 'completed', source: 'Daily Brief - Unsuccessful' },
+  { id: 't4', title: 'Follow up on AJ Bell application', category: 'Job Search', priority: 'HIGH', due: 'Today', status: 'completed', source: 'Daily Brief - Unsuccessful' },
   { id: 't5', title: 'Update LinkedIn with latest achievements', category: 'Job Search', priority: 'HIGH', due: 'This Week', status: 'pending', source: 'Daily Brief' },
   { id: 't6', title: 'Review Hays recruitment response', category: 'Job Search', priority: 'HIGH', due: 'Today', status: 'pending', source: 'Email' },
   // Elaman Group - TIER 1 PRIORITY
